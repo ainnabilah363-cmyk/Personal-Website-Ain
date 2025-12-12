@@ -1,0 +1,123 @@
+/*General styling*/
+body {
+  font-family:"Times New Roman", Times, serif;
+  background-color:#FFF4E0;
+  margin:0;
+  padding:0;
+  text-align: center;
+  color: #333;
+  overflow-x: hidden;
+  animation: fadeIn 2s ease-in;
+}
+
+/*heading*/
+h1 {
+	text-align:center ;
+	color:brown;
+	margin:20px 0;
+	background-color: #FFD6A5;
+  padding: 20px 0;
+  animation: slideDown 1.5s ease;
+}
+
+/*navigation*/
+nav {
+	background: #FFB6A5;
+	width:750px;
+	display:flex;
+	justify-content:space-between;
+	align-item:center;
+	margin:0 auto;
+	padding:5px 10px;
+	border-radius:22px;
+	box-shadow:2px 2px 20px rgba(0,0,0,3);
+  animation: fadeUp 2s ease;
+}
+
+nav > a {
+	color:brown;
+	text-decoration:none;
+	font-weight: bold;
+	padding:8px 16px;
+	border-radius:22px;
+	transition:background 0.25s, color 0.25s;
+}
+nav > a:hover {
+    background: #FFA07A; /* pilih warna pastel kegemaran */
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 15px #FFA07A, 0 0 10px #fff6e0; /* glow cantik */
+    outline: none;
+    border: none;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+/*Website Content*/
+
+.content {
+	background:white;
+	color:black;
+	width:300%;
+	max-width:1050px;
+	margin:40px auto 100px auto;
+	padding:30px;
+	border-radius:15px;
+	box-shadow:2px 2px 15px rgba(0,0,0,2);
+	text-align:center;
+	animation: fadeIn 2s ease-in;
+}
+.content h2 {
+	margin-bottom:15px;
+	color: rgb(56,130,209);
+}
+
+/*Footer*/
+.footer {
+	background:#111;
+	color:darkgoldenrod;
+	text-align:center;
+	padding:15px 0;
+	bottom:0;
+	Left:0;
+	width:100%;
+	border-top:none;
+	font-size:0.9em;
+	box-shadow:0-2px 10px rgb(0,0,3);
+	position:fixed;
+	
+}
+.footer p{
+	margin:0;
+}
+.info-table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.info-table th {
+    text-align: right;
+    padding: 10px 20px;
+    width: 30%;
+    color: brown;
+    font-weight: bold;
+}
+.info-table {
+  font-size: 17px;
+}
+
+.info-table td {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.info-table tr {
+    border-bottom: 1px solid #e2c9a5; /* garisan halus */
+}
+
+.info-table tr:last-child {
+    border-bottom: none;
+}
+
+

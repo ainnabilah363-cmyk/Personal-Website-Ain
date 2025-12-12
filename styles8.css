@@ -1,0 +1,284 @@
+/*General styling*/
+body {
+  font-family:"Times New Roman", Times, serif;
+  background-color:#FFF4E0;
+  margin:0;
+  padding:0;
+  text-align: center;
+  color: #FF69B4;
+  overflow-x: hidden;
+  animation: fadeIn 2s ease-in;
+}
+
+/*heading*/
+h1 {
+	text-align:center ;
+	color:brown;
+	margin:20px 0;
+	background-color: #FFD6A5;
+  padding: 20px 0;
+  animation: slideDown 1.5s ease;
+}
+
+/*navigation*/
+nav {
+  background: #FFB6A5;
+  width:750px;
+  display:flex;
+  justify-content:space-between;
+  align-item:center;
+  margin:0 auto;
+  padding:5px 10px;
+  border-radius:22px;
+  box-shadow:2px 2px 20px rgba(0,0,0,3);
+  animation: fadeUp 2s ease;
+}
+
+nav > a {
+  color:brown;
+  text-decoration:none;
+  font-weight: bold;
+  padding:8px 16px;
+  border-radius:22px;
+  transition:background 0.25s, color 0.25s;
+}
+nav > a:hover {
+    background: #FFA07A; /* pilih warna pastel kegemaran */
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 15px #FFA07A, 0 0 10px #fff6e0; /* glow cantik */
+    outline: none;
+    border: none;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+/*Website Content*/
+
+.content {
+	background:#ffe6e9;
+	color:black;
+	width:300%;
+	max-width:1050px;
+	margin:40px auto 100px auto;
+	padding:30px;
+	border-radius:15px;
+	box-shadow:2px 2px 15px rgba(0,0,0,2);
+	text-align:center;
+	animation: fadeIn 2s ease-in;
+}
+.content h2 {
+	margin-bottom:15px;
+	color: hotpink;
+}
+
+/*Footer*/
+.footer {
+	background:#111;
+	color:darkgoldenrod;
+	text-align:center;
+	padding:15px 0;
+	bottom:0;
+	Left:0;
+	width:100%;
+	border-top:none;
+	font-size:0.9em;
+	box-shadow:0-2px 10px rgb(0,0,3);
+	position:fixed;
+	
+}
+.footer p{
+	margin:0;
+}
+
+.glow-ain {
+    color: #FF69B4; /* warna tulisan Ain */
+    text-shadow:
+        0 0 8px #FFB6A5,
+        0 0 14px #FFD6A5,
+        0 0 20px #FFA07A,
+        0 0 26px white;
+}
+
+.family-section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fffdf8;
+  border-radius: 25px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.family-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 8.8rem;
+  color: #ff6b8b;
+  text-shadow: 0 0 10px rgba(255, 182, 193, 0.8);
+  margin-bottom: 10px;
+}
+
+.family-intro {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.family-values {
+  background: #ffe6f0;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+}
+
+.family-values h2 {
+  margin-bottom: 8px;
+  color: #e0557e;
+}
+
+.family-values ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.family-values li::before {
+  content: "❀ ";
+}
+
+.family-values li {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Kad ahli keluarga */
+.family-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.family-card {
+  background: #fff;
+  width: 180px;
+  border-radius: 20px;
+  padding: 15px 10px 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animasi hover comel */
+.family-card::before {
+  content: "❤";
+  position: absolute;
+  font-size: 1.5rem;
+  color: #ff9bb3;
+  top: -10px;
+  right: -10px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+}
+.glow-title {
+  color: #ff69b4;
+  text-shadow: 0 0 15px #ff8dbd, 0 0 20px #ffc2d6;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.family-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.family-card:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.family-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: justify-content;
+  border-radius: 50%;
+  border: 3px solid #ffc7d6;
+  margin-bottom: 10px;
+}
+
+.family-card h3 {
+  margin: 5px 0;
+  color: #ff6b8b;
+  font-size: 1.05rem;
+}
+
+.family-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Quote di bawah */
+.family-quote {
+  margin-top: 15px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Animasi masuk lembut */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive untuk skrin kecil */
+@media (max-width: 600px) {
+  .family-section {
+    margin: 20px 15px;
+    padding: 25px 18px;
+  }
+}
+
+ .card {
+      width: 100px;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 20px;
+      background-color: #ffffff;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #e26a8b;
+    }
+
+    .card p {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover p {
+  transform: translateY(-4px);
+  opacity: 1;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: rotate(-2deg) translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}

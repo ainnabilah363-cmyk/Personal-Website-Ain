@@ -1,0 +1,243 @@
+/*General styling*/
+body {
+  font-family:"Times New Roman", Times, serif;
+  background-color:#FFF4E0;
+  margin:0;
+  padding:0;
+  text-align: center;
+  color: #FF69B4;
+  overflow-x: hidden;
+  animation: fadeIn 2s ease-in;
+}
+
+/*heading*/
+h1 {
+	text-align:center ;
+	color:brown;
+	margin:20px 0;
+	background-color: #FFD6A5;
+  padding: 20px 0;
+  animation: slideDown 1.5s ease;
+}
+
+/*navigation*/
+nav {
+	background: #FFB6A5;
+	width:750px;
+	display:flex;
+	justify-content:space-between;
+	align-item:center;
+	margin:0 auto;
+	padding:5px 10px;
+	border-radius:22px;
+	box-shadow:2px 2px 20px rgba(0,0,0,3);
+  animation: fadeUp 2s ease;
+}
+
+nav > a {
+  color:brown;
+  text-decoration:none;
+  font-weight: bold;
+  padding:8px 16px;
+  border-radius:22px;
+  transition:background 0.25s, color 0.25s;
+}
+nav > a:hover {
+    background: #FFA07A; /* pilih warna pastel kegemaran */
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 15px #FFA07A, 0 0 10px #fff6e0; /* glow cantik */
+    outline: none;
+    border: none;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+/*Website Content*/
+
+.content {
+	background:white;
+	color:black;
+	width:300%;
+	max-width:1050px;
+	margin:40px auto 100px auto;
+	padding:30px;
+	border-radius:15px;
+	box-shadow:2px 2px 15px rgba(0,0,0,2);
+	text-align:center;
+	animation: fadeIn 2s ease-in;
+}
+.content h2 {
+	margin-bottom:15px;
+	color: hotpink;
+}
+
+/*Footer*/
+.footer {
+	background:#111;
+	color:darkgoldenrod;
+	text-align:center;
+	padding:15px 0;
+	bottom:0;
+	Left:0;
+	width:100%;
+	border-top:none;
+	font-size:0.9em;
+	box-shadow:0-2px 10px rgb(0,0,3);
+	position:fixed;
+	
+}
+.footer p{
+	margin:0;
+}
+
+.video-card {
+    background: #FFE2D8; /* pastel pink cute */
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    text-align: center;
+    animation: fadeUp 1.5s ease;
+    
+}
+
+.video-title {
+    color: #ff69b4; /* hotpink title */
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.video-frame {
+    background: white;
+    padding: 40px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+}
+
+.video-frame video {
+    width: 60%;
+    border-radius: 70px;
+}
+
+.video-caption {
+    color: #c44b7a;
+    margin-top: 12px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+
+.glow-ain {
+    color: #FF69B4; /* warna tulisan Ain */
+    text-shadow:
+        0 0 8px #FFB6A5,
+        0 0 14px #FFD6A5,
+        0 0 20px #FFA07A,
+        0 0 26px white;
+}
+
+.homepage {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HERO SECTION */
+.hero-box {
+  background: #ffe6e9;
+  padding: 40px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(255, 160, 170, 0.4);
+}
+
+.glow-title {
+  color: #ff69b4;
+  text-shadow: 0 0 15px #ff8dbd, 0 0 20px #ffc2d6;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.intro {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.scroll-btn {
+  padding: 10px 25px;
+  background: #ffb6c6;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ffcad6;
+  transition: 0.3s;
+}
+
+.scroll-btn:hover {
+  background: #ff9db4;
+  box-shadow: 0 0 20px #ff99b8, 0 0 15px white;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 0 15px rgba(255, 170, 180, 0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 140, 160, 0.5);
+}
+
+/* SECTION TITLE */
+.section-title {
+  margin-top: 40px;
+  color: #ff689f;
+  text-shadow: 0 0 10px #ffc7dd;
+}
+
+/* MINI GALLERY */
+.mini-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0 40px;
+}
+
+.mini-gallery img {
+  width: 25%;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(255, 150, 170, 0.4);
+}
+
+/* FUN FACTS */
+.fun-facts {
+  list-style: none;
+  padding: 0;
+  font-size: 17px;
+  color: #555;
+}
+
+.fun-facts li {
+  margin: 8px 0;
+  background: #ffe7ec;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 170, 185, 0.3);
+}
